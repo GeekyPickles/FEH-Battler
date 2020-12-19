@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap');
+
+body {
+  /* background-image: url("mapassets/mapbg.jpg");
+  background-size: auto;
+  background-repeat: no-repeat; */
+  /* background-color: #e0dac4; */
+  background-color: #7a1717;
+  font-family: "Libre Caslon Text",sans-serif;
+}
+
+#battlemap {
+  height: 800px;
+  width: 600px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  background-size: 600px 800px;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.gridbox {
+  height: 92px;
+  width: 92px;
+  padding: 0;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+
+  overflow: hidden;
+}
+
+.grindbox:hover {
+
+}
+
+.battlemaptitle {
+  position: absolute;
+  left: 35%;
+  bottom: 40%;
+  color: #383526;
+
+
+}
+
+.scrolltitle {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 322.995px;
+  width: 1067px;
+  position: relative;
+  text-align: center;
+
+}
+
+.scroll {
+
+}
+
+.scroll, .scrolltitle {
+
+}
+.battlescrollbox {
+  width: 1067px;
+  height: 145px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* from internet to hide scrollbars*/
+.battlescrollbar {
+  height: 145px;
+  width: 980px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: 2%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.battlescrollbar::-webkit-scrollbar {
+    display: none;
+}
+/*  */
+
+.battlescrollframe {
+  background-image: url("uiassets/homebanners/blankbanner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  pointer-events: none;
+  margin-bottom: 145px;
+
+}
+
+.battlebanner{
+  height: 125px;
+  filter: saturate(50%);
+}
+
+.battlebanner:hover {
+  cursor: pointer;
+  filter: saturate(150%);
+}
+
+.selectedbanner {
+  filter: saturate(150%);
+}
+
+.mapportrait {
+  height: 92px;
+}
+
+.thiefportraitshift {
+  margin-left: -40%;
+}
+
+.mageportraitshift {
+  margin-left: -20%;
+}
+
+.horizontalportraitshift {
+  margin-left: -40%;
+}
+
+.notice {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color: white;
+}
